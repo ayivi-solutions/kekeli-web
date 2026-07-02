@@ -485,6 +485,7 @@
 
           <div class="dtab-row">
             <button class="dtab on" id="tab-card" onclick="switchTab('card')">💳 Card / Online</button>
+            <button class="dtab" id="tab-momo" onclick="switchTab('momo')">📱 Mobile Money</button>
             <button class="dtab" id="tab-bank" onclick="switchTab('bank')">🏦 Bank Transfer</button>
           </div>
 
@@ -521,6 +522,21 @@
               <span style="font-size:11px;color:var(--slate)">🏦 Paystack</span>
               <span style="font-size:11px;color:var(--slate)">💳 Visa / MC / Amex</span>
               <span style="font-size:11px;color:var(--slate)">📧 Receipt by email</span>
+            </div>
+          </div>
+
+          <div id="pane-momo" style="display:none">
+            <div class="bank-box">
+              <h4>📱 Mobile Money (MTN MoMo)</h4>
+              <div class="bank-row"><span class="bank-key">Merchant / Till Number</span><span class="bank-val">571852</span></div>
+              <div class="bank-row"><span class="bank-key">Registered Name</span><span class="bank-val" style="font-family:inherit;font-weight:700">KEKELI CO-OPERATIVE FOR THE NEEDY</span></div>
+              <div class="bank-row"><span class="bank-key">Network</span><span class="bank-val" style="font-family:inherit">MTN Mobile Money</span></div>
+              <div class="bank-row"><span class="bank-key">Alternative Number</span><span class="bank-val">+233 594 972 754</span></div>
+              <div class="bank-row"><span class="bank-key">Currency</span><span class="bank-val" style="font-family:inherit">GHS</span></div>
+            </div>
+            <div class="bank-note">
+              ℹ️ <strong>To donate:</strong> Dial <strong>*170#</strong> on MTN, select Pay Bill / Merchant Payment, and enter Merchant Number <strong>571852</strong>. Confirm the name shown matches <strong>KEKELI CO-OPERATIVE FOR THE NEEDY</strong> before completing the transfer.<br><br>
+              📌 After sending, please email <a href="mailto:info@kekeli4needy.com" style="color:#7a5a1a">info@kekeli4needy.com</a> with your name, amount and the MoMo transaction ID so we can acknowledge your donation promptly.
             </div>
           </div>
 

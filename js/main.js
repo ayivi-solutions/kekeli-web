@@ -148,8 +148,10 @@ function setFreq(f){
 /* ── DONATE — TAB SWITCH ──────────────────────────────────────── */
 function switchTab(t){
   document.getElementById('tab-card').classList.toggle('on',t==='card');
+  document.getElementById('tab-momo').classList.toggle('on',t==='momo');
   document.getElementById('tab-bank').classList.toggle('on',t==='bank');
   document.getElementById('pane-card').style.display=t==='card'?'block':'none';
+  document.getElementById('pane-momo').style.display=t==='momo'?'block':'none';
   document.getElementById('pane-bank').style.display=t==='bank'?'block':'none';
 }
 
