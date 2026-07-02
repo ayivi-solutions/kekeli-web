@@ -3,13 +3,24 @@ const NMAP={
   home:'nb-home',about:'nb-about',work:'nb-work',
   'work-water':'nb-work','work-agri':'nb-work','work-edu':'nb-work',
   'edu-orchard':'nb-work','edu-poultry':'nb-work',
+  gallery:'nb-gallery',
   impact:'nb-impact',partners:'nb-partners',
   news:'nb-news',n1:'nb-news',n2:'nb-news',n3:'nb-news',
   contact:'nb-contact',donate:null
 };
 
 /* ── CONTINUOUS SCROLL vs CLICK-THROUGH PAGES ─────────────────── */
-const SCROLL_IDS=new Set(['home','about','work','work-water','work-agri','work-edu','impact','partners','news','contact','donate']);
+const SCROLL_IDS=new Set(['home','about','work','work-water','work-agri','work-edu','gallery','impact','partners','news','contact','donate']);
+
+/* ── GALLERY FILTER ────────────────────────────────────────────── */
+function filterGallery(cat, btn){
+  document.querySelectorAll('.gfilter-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('#galleryGrid .gitem').forEach(item=>{
+    const match = cat==='all' || item.dataset.cat===cat;
+    item.classList.toggle('hidden', !match);
+  });
+}
 
 function setActiveNav(id){
   document.querySelectorAll('.nlinks button, .mnav button').forEach(b=>b.classList.remove('on'));
