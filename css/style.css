@@ -39,14 +39,16 @@ img{max-width:100%;display:block}
   color:rgba(255,255,255,.55);
   font-size:11.5px;font-weight:500;
   padding:0 20px;
-  display:flex;align-items:center;justify-content:center;
-  gap:20px;flex-wrap:nowrap;letter-spacing:.02em;
+  display:flex;align-items:center;justify-content:flex-start;
+  gap:14px;flex-wrap:nowrap;letter-spacing:.02em;
   overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
   white-space:nowrap;
 }
 .topbar::-webkit-scrollbar{display:none}
 .topbar a{color:var(--mint);transition:color .2s}.topbar a:hover{color:var(--white)}
 .tsep{color:rgba(255,255,255,.2)}
+.tbar-brand{color:var(--white);font-weight:700;letter-spacing:.08em;font-size:11.5px;flex-shrink:0}
+.tbar-spacer{flex:1 1 auto;min-width:12px}
 
 /* ── NAV ───────────────────────────────────────────────────────── */
 nav{
@@ -527,7 +529,7 @@ footer{background:var(--deep);color:rgba(255,255,255,.55);padding:60px 20px 28px
 
 /* ── SCROLL TOP BUTTON ─────────────────────────────────────────── */
 .scrolltop{
-  position:fixed;bottom:92px;right:20px;width:46px;height:46px;border-radius:50%;
+  position:fixed;bottom:162px;right:20px;width:46px;height:46px;border-radius:50%;
   background:var(--forest);color:var(--white);border:2px solid var(--jade);
   font-size:18px;cursor:pointer;z-index:850;
   box-shadow:0 6px 24px rgba(0,0,0,.25);
@@ -537,6 +539,19 @@ footer{background:var(--deep);color:rgba(255,255,255,.55);padding:60px 20px 28px
 }
 .scrolltop.show{opacity:1;transform:translateY(0) scale(1);pointer-events:all}
 .scrolltop:hover{background:var(--sage);transform:translateY(-3px) scale(1.06)}
+.fab-donate{
+  position:fixed;bottom:92px;right:20px;width:58px;height:58px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--amber));color:var(--deep);
+  border:2px solid rgba(255,255,255,.4);
+  font-size:24px;cursor:pointer;z-index:851;
+  box-shadow:0 8px 28px rgba(200,149,42,.45);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .3s var(--ease-spring);
+  animation:fab-pulse 2.6s ease-in-out infinite;
+}
+.fab-donate:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 10px 32px rgba(200,149,42,.6)}
+@keyframes fab-pulse{0%,100%{box-shadow:0 8px 28px rgba(200,149,42,.45)}50%{box-shadow:0 8px 28px rgba(200,149,42,.75),0 0 0 8px rgba(200,149,42,.12)}}
+@media(max-width:640px){.fab-donate{width:52px;height:52px;font-size:21px;bottom:86px;right:16px}.scrolltop{bottom:146px;right:18px;width:42px;height:42px}}
 
 /* ── COOKIE BANNER ─────────────────────────────────────────────── */
 .cookie-banner{
