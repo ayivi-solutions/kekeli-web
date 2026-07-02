@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kekeli Co-operative For The Needy LBG — delivering clean water, reforestation and community development across Ghana's most underserved regions.">
+<meta name="og:title" content="Kekeli Co-operative For The Needy LBG">
+<meta name="og:description" content="Clean Water · Reforestation · Community · Ghana">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kekeli4needy.com">
+<!-- MEDIA: og:image must be a hosted URL (data URIs are not readable by social crawlers).
+     Upload kekeli-og-image.png (provided) to this path before going live. -->
+<meta property="og:image" content="https://kekeli4needy.com/assets/kekeli-og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kekeli Co-operative For The Needy LBG — Water, Growth, Dignity, Hope">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kekeli Co-operative For The Needy LBG">
+<meta name="twitter:description" content="Clean Water · Reforestation · Community · Ghana">
+<meta name="twitter:image" content="https://kekeli4needy.com/assets/kekeli-og-image.png">
+<title>Kekeli Co-operative For The Needy LBG</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://js.paystack.co/v1/inline.js" async></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>📍 Akatsi South, Volta Region, Ghana</span><span class="tsep">|</span>
+  <a href="tel:+233594972754">📞 +233 594 972 754</a><span class="tsep">|</span>
+  <a href="mailto:info@kekeli4needy.com">✉️ info@kekeli4needy.com</a><span class="tsep">|</span>
+  <span>LBG Reg. No. CG012345</span>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">🔵 75th Borehole Commissioned · Gui, Akatsi South · Jun 2026</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>📊 Annual Report 2025 Now Available</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>🌴 Reforestation Underway in Dzogadze &amp; Akeve</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>🤝 $500,000+ Raised from Canadian Partners</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>⚖️ Registered LBG · Ghana · Reg. No. CG012345</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>🏫 Orchard &amp; Poultry Launched at Volta School for the Deaf</span>
+    <!-- duplicate set for seamless loop -->
+    <span class="ticker-item">🔵 75th Borehole Commissioned · Gui, Akatsi South · Jun 2026</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>📊 Annual Report 2025 Now Available</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>🌴 Reforestation Underway in Dzogadze &amp; Akeve</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>🤝 $500,000+ Raised from Canadian Partners</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>⚖️ Registered LBG · Ghana · Reg. No. CG012345</span>
+    <span class="ticker-item"><span class="ticker-sep">|</span>🏫 Orchard &amp; Poultry Launched at Volta School for the Deaf</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="ni">
+    <div class="nlogo" onclick="go('home')">
+      <div class="nlogo-mark"><img src="images/logo-mark.png" alt="Kekeli Co-operative logo"></div>
+      <div class="nlogo-text"><strong>Kekeli Co-operative</strong><span>For The Needy LBG</span></div>
+    </div>
+    <ul class="nlinks">
+      <li><button id="nb-home" class="on" onclick="go('home')">Home</button></li>
+      <li><button id="nb-about" onclick="go('about')">About Us</button></li>
+      <li><button id="nb-work" onclick="go('work')">Our Work</button></li>
+      <li><button id="nb-impact" onclick="go('impact')">Impact &amp; Reports</button></li>
+      <li><button id="nb-partners" onclick="go('partners')">Partners</button></li>
+      <li><button id="nb-news" onclick="go('news')">News &amp; Updates</button></li>
+      <li><button id="nb-contact" onclick="go('contact')">Contact</button></li>
+      <li><button class="ndonate" onclick="go('donate')">❤️ Donate</button></li>
+    </ul>
+    <button class="hbtn" id="hbtn" onclick="toggleMob()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mnav" id="mnav">
+  <button onclick="go('home');closeMob()">Home</button>
+  <button onclick="go('about');closeMob()">About Us</button>
+  <button onclick="go('work');closeMob()">Our Work</button>
+  <button onclick="go('impact');closeMob()">Impact &amp; Reports</button>
+  <button onclick="go('partners');closeMob()">Partners &amp; Donors</button>
+  <button onclick="go('news');closeMob()">News &amp; Updates</button>
+  <button onclick="go('contact');closeMob()">Contact</button>
+  <button class="mdonate" onclick="go('donate');closeMob()">❤️ Donate Now</button>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     HOME
+══════════════════════════════════════════════ -->
+<div id="main-scroll" class="pg on">
+<div id="home" class="mainsec">
+  <section class="hero">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Clean Water · Reforestation · Community · Ghana</div>
+      <h1 class="h1" style="max-width:700px;margin-bottom:16px">Transforming Communities Across <em>Ghana</em>, One Borehole at a Time.</h1>
+      <p class="lead">Kekeli Co-operative For The Needy LBG — a legally registered, internationally funded institution delivering clean water, reforestation, microfinance and community development across Ghana's most underserved regions.</p>
+      <div class="hero-ctas">
+        <button class="btn bp" onclick="go('donate')">❤️ Donate Now</button>
+        <button class="btn bo" onclick="go('work')">See Our Work →</button>
+      </div>
+      <div class="sband">
+        <div class="scell" onclick="go('impact')"><div class="snum"><span class="cnum" data-target="75">0</span><em>+</em></div><div class="slbl">Mechanised Boreholes</div></div>
+        <div class="scell" onclick="go('impact')"><div class="snum" style="font-size:clamp(20px,3vw,30px);line-height:1.15">GHS&nbsp;<span class="cnum" data-target="4">0</span>.5M<em>+</em></div><div class="slbl">Total Asset Value</div></div>
+        <div class="scell" onclick="go('impact')"><div class="snum">$<span class="cnum" data-target="500">0</span><em>K+</em></div><div class="slbl">Raised Internationally</div></div>
+        <div class="scell" onclick="go('impact')"><div class="snum"><span class="cnum" data-target="250">0</span><em>+</em></div><div class="slbl">Villages Served</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tbar"><div class="tbar-inner">
+    <div class="ti"><span class="ti-dot"></span>Registered LBG · Ghana</div>
+    <div class="ti"><span class="ti-dot"></span>Canadian Donor Partners</div>
+    <div class="ti"><span class="ti-dot"></span>District Assembly Partnerships</div>
+    <div class="ti"><span class="ti-dot"></span>250+ Communities Served</div>
+    <div class="ti"><span class="ti-dot"></span>Safeguarding Policy in Place</div>
+  </div></div>
+
+  <section class="sec sec-alt">
+    <div class="wrap" style="text-align:center;max-width:700px">
+      <div class="lbl reveal">Our Mission</div>
+      <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:14px">Striving towards sustainability in access to water and community empowerment across Ghana.</h2>
+      <p class="sub reveal reveal-delay-2" style="margin-bottom:28px">Founded on the principle that no community should go without clean water, Kekeli Co-operative has spent over a decade building infrastructure and livelihoods — governed with accountability, rooted in trust.</p>
+      <button class="btn bg reveal reveal-delay-3" onclick="go('about')">Our Story →</button>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-intro">
+        <div class="lbl reveal">What We Do</div>
+        <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:10px">How We Help</h2>
+        <p class="sub reveal reveal-delay-2">Six programmes — water, reforestation, microfinance, community development, scholarships and health — each owned, managed and sustained by the Co-operative.</p>
+      </div>
+      <div class="g3">
+        <div class="card reveal" onclick="go('work-water')"><div class="ph phlg"><div class="phi">💧</div><div class="pht">Water Infrastructure · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Water Security</span><h3>Mechanised Borehole Programme</h3><p>75 boreholes sustained through micro-loans to Borehole Management Committees. Each unit valued at approximately GHS 60,000.</p><div class="card-arrow">Explore Water Projects →</div></div></div>
+        <div class="card reveal reveal-delay-1" onclick="go('work-agri')"><div class="ph phlg"><div class="phi">🌴</div><div class="pht">Reforestation · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Reforestation</span><h3>Palm &amp; Coconut Planting</h3><p>Reforestation efforts planting palm and coconut trees in Dzogadze and Akeve — restoring ecosystems and providing lasting economic benefit.</p><div class="card-arrow">Explore Reforestation →</div></div></div>
+        <div class="card reveal reveal-delay-2" onclick="go('work-edu')"><div class="ph phlg"><div class="phi">🤝</div><div class="pht">Community &amp; Health · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Community, Scholarships &amp; Health</span><h3>Community-Led Programmes</h3><p>Microfinance for female farmers, scholarships for rural students, malaria testing and antibiotics, and livelihood projects at Volta School for the Deaf.</p><div class="card-arrow">Explore Programmes →</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="lbl reveal">Voices From The Field</div>
+      <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:28px">Stories of Change</h2>
+      <div class="g2">
+        <div class="quote reveal"><blockquote>"Before the borehole, women walked over 4 kilometres every morning to collect water. Today our children go to school instead of to the river."</blockquote><div class="qattr">Community Leader · Akatsi South District, Volta Region</div></div>
+        <div class="quote reveal reveal-delay-1"><blockquote>"The Kekeli Co-operative didn't just build us a borehole — they trained our community to maintain it. That's what makes this different."</blockquote><div class="qattr">District Water &amp; Sanitation Officer · Volta Region</div></div>
+      </div>
+      <p style="color:var(--slate);font-size:11.5px;margin-top:16px;text-align:center" class="reveal">All beneficiary stories shared with explicit written consent. Consent documentation held on file.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="lbl reveal">Latest</div>
+      <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:28px">News &amp; Updates</h2>
+      <div class="g3">
+        <div class="card reveal" onclick="go('n1')"><div class="cb"><div class="nmeta"><span class="chip cg">Water</span>June 2026</div><h3>Kekeli Commissions 75th Mechanised Borehole</h3><p>Togbe Dorglo Anumah VI commissions the 75th borehole at Gui, Akatsi South — a landmark milestone for the Avenor Traditional Area.</p><div class="card-arrow">Read More →</div></div></div>
+        <div class="card reveal reveal-delay-1" onclick="go('n2')"><div class="cb"><div class="nmeta"><span class="chip cg">Education</span>March 2026</div><h3>Orchard &amp; Poultry Programme at Volta School for the Deaf</h3><p>Two new livelihood projects support nutrition and income generation for deaf students and staff.</p><div class="card-arrow">Read More →</div></div></div>
+        <div class="card reveal reveal-delay-2" onclick="go('n3')"><div class="cb"><div class="nmeta"><span class="chip cau">Governance</span>January 2026</div><h3>Annual Report 2025 Published — Transparency in Action</h3><p>Kekeli publishes its 2025 programme summary and financial overview, reaffirming donor accountability.</p><div class="card-arrow">Read More →</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="reveal" style="background:linear-gradient(135deg,var(--deep),var(--gold));padding:clamp(48px,7vw,80px) 16px;text-align:center">
+    <div class="wrap">
+      <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(24px,4vw,40px);color:var(--white);margin-bottom:14px">Every donation drills deeper.</h2>
+      <p style="color:rgba(255,255,255,.82);font-size:16px;max-width:520px;margin:0 auto 30px">$25 provides clean water for a family for 3 months. $500 installs a community water point. $10,000 commissions an entire borehole. Every amount transforms a life.</p>
+      <button class="btn" style="background:var(--white);color:var(--forest)" onclick="go('donate')">Donate Now →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══════════════════════════════════════════ -->
+
+<div id="about" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Who We Are</div><h1>About Kekeli Co-operative</h1><p>A legally registered institution with a decade of documented, tangible impact — building clean water infrastructure, agricultural assets and community trust across Ghana.</p></div></div>
+  <section class="sec">
+    <div class="wrap">
+      <div class="g2" style="align-items:start">
+        <div>
+          <div class="lbl reveal">Our Story</div>
+          <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:16px">From a Vision to 75 Boreholes</h2>
+          <p class="reveal reveal-delay-2" style="color:var(--slate);font-size:15px;line-height:1.78;margin-bottom:14px">Kekeli Co-operative For The Needy LBG carries forward a mission that began in earnest in 2017, when Brian Mosko first visited the Akatsi South Municipality of the Volta Region. What started as a handful of borehole projects, funded and driven from Canada, grew into a sustained partnership with the Avenor Traditional Council under Togbe Dorglo Anumah VI. The name <em>Kekeli</em> means <em>"light"</em> in Ewe — a reflection of the hope clean water brings to communities long overlooked by mainstream development.</p>
+          <p class="reveal reveal-delay-2" style="color:var(--slate);font-size:15px;line-height:1.78;margin-bottom:14px">Kekeli Co-operative was formed as the institutional vehicle to sustain and expand that work — providing micro-loans to Borehole Management Committees (BMCs) for maintenance, extending micro-finance to small-holder female farmers, and running reforestation, scholarship and community health programmes across the region. Today the Co-operative has commissioned <strong style="color:var(--forest)">75 mechanised boreholes</strong>, the most recent at Gui on 24 June 2026, serving over 250 villages, 10 schools and an estimated 130,000 people.</p>
+          <p class="reveal reveal-delay-3" style="color:var(--slate);font-size:15px;line-height:1.78">Registered as a Limited by Guarantee (LBG) under Ghana's Companies Act 2019 (Act 992), the Co-operative operates with full accountability to its donors, partners and the communities it serves.</p>
+          <div class="rstrip reveal reveal-delay-3">🔒 LBG Reg. No. CG012345 · Companies Act, 2019 (Act 992)</div>
+        </div>
+        <div>
+          <div class="reveal reveal-delay-1" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:20px;padding:26px;margin-bottom:14px;border:1px solid rgba(46,139,87,.15)">
+            <div style="font-size:28px;margin-bottom:11px">🌟</div>
+            <h4 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--forest);margin-bottom:7px">Our Mission</h4>
+            <p style="font-size:13.5px;color:var(--slate);line-height:1.67">To empower underserved communities by providing sustainable solutions for water access, agriculture and environmental conservation — offering soft loans for borehole maintenance, supporting smallholder farmers, and promoting reforestation to restore ecosystems.</p>
+          </div>
+          <div class="reveal reveal-delay-2" style="background:linear-gradient(135deg,var(--cream),#fef5e0);border-radius:20px;padding:26px;border:1px solid rgba(200,149,42,.2)">
+            <div style="font-size:28px;margin-bottom:11px">🔭</div>
+            <h4 style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--forest);margin-bottom:7px">Our Vision</h4>
+            <p style="font-size:13.5px;color:var(--slate);line-height:1.67">A Ghana where no community is denied clean water, and where every person has access to the resources needed to live a dignified, self-sustaining life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="lbl reveal">Our Journey</div>
+      <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:32px">A Decade of Impact</h2>
+      <div class="tl">
+        <div class="tli reveal"><div class="tl-dot">1</div><div class="tl-yr">2017</div><div class="tl-title">First Visit to Akatsi South</div><div class="tl-txt">Brian Mosko's first visit to the Volta Region begins a partnership with the Avenor Traditional Council that would grow into a sustained borehole and community development programme.</div></div>
+        <div class="tli reveal reveal-delay-1"><div class="tl-dot">2</div><div class="tl-yr">2018</div><div class="tl-title">Dzogadze Medical Clinic &amp; First Boreholes</div><div class="tl-txt">A walk-in medical clinic is funded and equipped in Dzogadze, and construction of mechanised boreholes accelerates across the Akatsi South Municipality.</div></div>
+        <div class="tli reveal reveal-delay-2"><div class="tl-dot">3</div><div class="tl-yr">Growth</div><div class="tl-title">Kekeli Co-operative Formed</div><div class="tl-txt">Kekeli Co-operative For The Needy LBG is established as the institutional vehicle to sustain and expand the work — registered under Ghana's Companies Act 2019 (Act 992).</div></div>
+        <div class="tli reveal reveal-delay-2"><div class="tl-dot">4</div><div class="tl-yr">Expansion</div><div class="tl-title">Reforestation &amp; Microfinance Launched</div><div class="tl-txt">Palm and coconut reforestation begins in Dzogadze and Akeve, alongside micro-loans to Borehole Management Committees and small-holder female farmers.</div></div>
+        <div class="tli reveal reveal-delay-3"><div class="tl-dot">5</div><div class="tl-yr">24 Jun 2026</div><div class="tl-title">75th Borehole Commissioned · Gui</div><div class="tl-txt">Togbe Dorglo Anumah VI commissions the 75th borehole at Gui in Akatsi South — "This is the 75th borehole we are commissioning today within our Avenor land."</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="lbl reveal">Governance</div>
+      <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:10px">Our Directors</h2>
+      <p class="sub reveal reveal-delay-2">Kekeli Co-operative is governed by a team spanning traditional leadership, operations, fundraising and legal counsel across Ghana and Canada.</p>
+      <div class="tgrid">
+        <div class="tcard reveal"><div class="av avlg av1">DA</div><div class="tname">Togbe Dorglo Anumah VI</div><div class="trole">Paramount Chief of Avenor &amp; Country Director</div><div class="tbio">Paramount Chief of Avenor Traditional Area and President of the Avenor Traditional Council. Presides over borehole commissionings across Avenor land.</div></div>
+        <div class="tcard reveal reveal-delay-1"><div class="av avlg av2">MN</div><div class="tname">Michael "D.D." Nyahe</div><div class="trole">Director of Operations &amp; Communications</div><div class="tbio">A proud citizen of Dzogadze. Has personally supervised the construction and commissioning of all 75 boreholes across Ghana.</div></div>
+        <div class="tcard reveal reveal-delay-2"><div class="av avlg av3">BM</div><div class="tname">Brian Mosko</div><div class="trole">Director of Fundraising · Canada</div><div class="tbio">Also known as Togbe Agamah Dormenyo I. Leads international fundraising and donor relations from Canada.</div></div>
+        <div class="tcard reveal reveal-delay-3"><div class="av avlg av4">AS</div><div class="tname">Aubrey Spring</div><div class="trole">Director · Canada</div><div class="tbio">Supports Canadian partnerships and programme delivery alongside the Volta Region team.</div></div>
+        <div class="tcard reveal reveal-delay-4"><div class="av avlg av5">LA</div><div class="tname">Lydia Abadzivor</div><div class="trole">Director of Administration</div><div class="tbio">Oversees administration and institutional operations for the Co-operative.</div></div>
+        <div class="tcard reveal reveal-delay-4"><div class="av avlg av6">PS</div><div class="tname">Peter Samlafo, Esq</div><div class="trole">Legal Counsel</div><div class="tbio">Provides legal counsel and governance oversight for the Co-operative.</div></div>
+      </div>
+      <div class="reveal" style="margin-top:24px;padding:16px 20px;background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:14px;font-size:13.5px;color:var(--slate);border:1px solid rgba(46,139,87,.15)">📋 <strong style="color:var(--forest)">Governance Note:</strong> Full director bios, appointment dates and conflict-of-interest declarations are available to accredited grant bodies on request. Contact <a href="mailto:info@kekeli4needy.com" style="color:var(--moss);font-weight:600">info@kekeli4needy.com</a></div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="lbl reveal">Accountability</div>
+      <h2 class="h2 reveal reveal-delay-1" style="margin-bottom:28px">Policies &amp; Compliance</h2>
+      <div class="g3">
+        <div class="card reveal" onclick="go('privacy')"><div class="cb"><div style="font-size:32px;margin-bottom:10px">🔒</div><h3>Privacy Policy</h3><p>How we collect, use and protect personal data from donors, partners and community members.</p><div class="card-arrow">Read Policy →</div></div></div>
+        <div class="card reveal reveal-delay-1" onclick="go('safeguarding')"><div class="cb"><div style="font-size:32px;margin-bottom:10px">🛡️</div><h3>Safeguarding &amp; Ethics</h3><p>Our commitment to protecting vulnerable persons, including children, in all programme areas.</p><div class="card-arrow">Read Policy →</div></div></div>
+        <div class="card reveal reveal-delay-2" onclick="go('cookies')"><div class="cb"><div style="font-size:32px;margin-bottom:10px">🍪</div><h3>Cookie Policy</h3><p>What cookies our website uses and how you can manage your preferences.</p><div class="card-arrow">Read Policy →</div></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══ WORK HUB ══════════════════════════════════════ -->
+
+<div id="work" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">What We Do</div><h1>Our Work in the Field</h1><p>Six programmes — water, reforestation, microfinance, community development, scholarships and health — sustaining communities across the Avenor Traditional Area.</p>
+    <div class="subjump">
+      <button onclick="go('work-water')">💧 Water</button>
+      <button onclick="go('work-agri')">🌴 Reforestation</button>
+      <button onclick="go('work-edu')">🎓 Community &amp; Health</button>
+    </div>
+  </div></div>
+  <section class="sec"><div class="wrap"><div class="g3">
+    <div class="card reveal" onclick="go('work-water')"><div class="ph phlg"><div class="phi">💧</div><div class="pht">Borehole · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Water Sustainability</span><h3>Micro-Loans to BMCs</h3><p>Providing micro-loans to Borehole Management Committees (BMCs) for the maintenance of boreholes, ensuring 75 sites keep delivering clean water.</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"><span class="chip cg">📍 75 boreholes</span><span class="chip cg">💰 GHS 60K each</span></div><div class="card-arrow">View Borehole Map →</div></div></div>
+    <div class="card reveal reveal-delay-1" onclick="go('work-agri')"><div class="ph phlg"><div class="phi">🌴</div><div class="pht">Reforestation · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Reforestation</span><h3>Palm &amp; Coconut Planting</h3><p>Reforestation efforts planting palm and coconut trees in Dzogadze and Akeve — promoting environmental sustainability and economic benefit.</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px"><span class="chip cg">🌱 5 acres each</span><span class="chip cg">♻️ 2 sites</span></div><div class="card-arrow">Explore Reforestation →</div></div></div>
+    <div class="card reveal reveal-delay-2"><div class="ph phlg"><div class="phi">🌾</div><div class="pht">Microfinance · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Microfinance</span><h3>Loans for Female Farmers</h3><p>Offering micro-loans to small-holder female farmers, empowering them to improve their livelihoods and contribute to the local economy.</p></div></div>
+    <div class="card reveal reveal-delay-3" onclick="go('work-edu')"><div class="ph phlg"><div class="phi">🤝</div><div class="pht">Community Development · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Community Development</span><h3>Community-Led Programmes</h3><p>Collaborating with local communities to identify and address their needs — including the orchard and poultry programmes at Volta School for the Deaf.</p><div class="card-arrow">Explore Programmes →</div></div></div>
+    <div class="card reveal reveal-delay-4"><div class="ph phlg"><div class="phi">🎓</div><div class="pht">Scholarships · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Scholarships</span><h3>Scholarships for Rural Students</h3><p>We offer scholarships to deserving students from rural communities, enabling them to pursue their educational goals.</p></div></div>
+    <div class="card reveal reveal-delay-4"><div class="ph phlg"><div class="phi">💊</div><div class="pht">Health · Photo Placeholder</div></div><div class="cb"><span class="chip cg">Health</span><h3>Malaria Testing &amp; Antibiotics</h3><p>250 rounds of antibiotics provided for those testing positive for malaria, alongside annual community malaria testing clinics.</p></div></div>
+  </div></div></section>
+</div>
+
+<!-- ══ WATER INFRASTRUCTURE ══════════════════════════ -->
+
+<div id="work-water" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Water Security</div><h1>Mechanised Borehole Programme</h1><p>75 mechanised boreholes across the Avenor Traditional Area, Akatsi South Municipality — sustained through micro-loans to Borehole Management Committees (BMCs) for ongoing maintenance.</p></div></div>
+  <section class="sec"><div class="wrap">
+    <div class="g3" style="margin-bottom:40px">
+      <div class="reveal" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:20px;padding:28px 20px;text-align:center;border:1px solid rgba(46,139,87,.15)"><div class="impnum"><span class="cnum" data-target="75">0</span></div><div class="lbl" style="margin-top:8px">Boreholes Commissioned</div></div>
+      <div class="reveal reveal-delay-1" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:20px;padding:28px 20px;text-align:center;border:1px solid rgba(46,139,87,.15)"><div class="impnum" style="font-size:clamp(28px,4vw,50px)">GHS <span class="cnum" data-target="60">0</span>K</div><div class="lbl" style="margin-top:8px">Value Per Borehole</div></div>
+      <div class="reveal reveal-delay-2" style="background:linear-gradient(135deg,var(--cream),#fef5e0);border-radius:20px;padding:28px 20px;text-align:center;border:1px solid rgba(200,149,42,.2)"><div class="impnum">GHS <span class="cnum" data-target="4">0</span>.5M</div><div class="lbl" style="margin-top:8px;color:var(--gold)">Total Asset Base</div></div>
+    </div>
+    <div class="map-wrap reveal">
+      <div class="map-icon">🗺️</div>
+      <h3 class="h3" style="margin-bottom:6px">Serving the Avenor Traditional Area</h3>
+      <p style="color:var(--slate);font-size:13px;margin-bottom:4px">All 75 boreholes sit within the Akatsi South Municipality of the Volta Region, on land under the Avenor Traditional Council.</p>
+      <p style="color:var(--slate);font-size:11px">Over 250 villages, 10 schools and an estimated 130,000 people served. GPS coordinates for all sites are held on record.</p>
+      <div class="rgrid">
+        <div class="rcard"><div class="rnum">75</div><div class="rlbl">Boreholes</div><div class="rname">Avenor Traditional Area</div></div>
+        <div class="rcard"><div class="rnum">250+</div><div class="rlbl">Communities</div><div class="rname">Akatsi South Municipality</div></div>
+        <div class="rcard"><div class="rnum">10</div><div class="rlbl">Schools Served</div><div class="rname">Including Volta School for the Deaf</div></div>
+      </div>
+      <div style="margin-top:24px">
+        <h3 class="h3" style="margin-bottom:12px">Most Recently Commissioned — Sites 71–75</h3>
+        <div class="rgrid">
+          <div class="rcard"><div class="rnum">71</div><div class="rlbl">Borehole</div><div class="rname">Dzogadze</div></div>
+          <div class="rcard"><div class="rnum">72</div><div class="rlbl">Borehole</div><div class="rname">Kalekope</div></div>
+          <div class="rcard"><div class="rnum">73</div><div class="rlbl">Borehole</div><div class="rname">Wovenu Senior High Technical School, Tadzewu (Ketu North)</div></div>
+          <div class="rcard"><div class="rnum">74</div><div class="rlbl">Borehole</div><div class="rname">Akatsi Anyiheme Basic School</div></div>
+          <div class="rcard"><div class="rnum">75</div><div class="rlbl">Borehole · 24 Jun 2026</div><div class="rname">Akeve Gui</div></div>
+        </div>
+      </div>
+      <div class="hbox" style="margin-top:16px"><h4>💧 Gui (Akeve-Gui) — 24 June 2026</h4><p>The 75th borehole, commissioned by Togbe Dorglo Anumah VI: "This is the 75th borehole we are commissioning today within our Avenor land."</p></div>
+    </div>
+    <div class="hbox reveal"><h4>📋 Full Location Register Available</h4><p>A complete list of all 75 borehole locations — including community names, GPS coordinates, commissioning dates and maintenance status — is available as a downloadable report. <a onclick="go('impact')">View Reports →</a></p></div>
+  </div></section>
+</div>
+
+<div id="work-agri" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Reforestation</div><h1>Palm &amp; Coconut Reforestation</h1><p>Planting and maintaining palm and coconut trees in Dzogadze and Akeve — restoring ecosystems while generating economic benefits for local communities.</p></div></div>
+  <section class="sec"><div class="wrap" style="max-width:960px">
+    <div class="g2" style="margin-bottom:32px;align-items:start">
+      <div class="ph pher reveal"><div class="phi">🌴</div><div class="pht">Reforestation Site · kekeli-reforestation-dzogadze.jpg</div></div>
+      <div>
+        <div class="lbl reveal">Programme Overview</div>
+        <h2 class="h2 reveal reveal-delay-1" style="font-size:clamp(20px,3vw,32px);margin-bottom:14px">Two Sites, Two Species</h2>
+        <p class="reveal reveal-delay-2" style="color:var(--slate);font-size:14px;line-height:1.78;margin-bottom:18px">Kekeli maintains over 5 acres each of palm and coconut trees in Dzogadze and Akeve, in the Akatsi South Municipality. The programme restores local ecosystems while providing a long-term economic asset for surrounding communities.</p>
+        <div class="reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;gap:10px;align-items:center"><span style="background:var(--foam);padding:7px 14px;border-radius:100px;font-family:'Syne',sans-serif;font-weight:700;color:var(--sage);font-size:13px;border:1px solid rgba(46,139,87,.2)">5+ Acres Each</span><span style="color:var(--slate);font-size:13px">Palm &amp; coconut, per site</span></div>
+          <div style="display:flex;gap:10px;align-items:center"><span style="background:var(--foam);padding:7px 14px;border-radius:100px;font-family:'Syne',sans-serif;font-weight:700;color:var(--sage);font-size:13px;border:1px solid rgba(46,139,87,.2)">Dzogadze &amp; Akeve</span><span style="color:var(--slate);font-size:13px">Akatsi South Municipality</span></div>
+          <div style="display:flex;gap:10px;align-items:center"><span style="background:var(--foam);padding:7px 14px;border-radius:100px;font-family:'Syne',sans-serif;font-weight:700;color:var(--sage);font-size:13px;border:1px solid rgba(46,139,87,.2)">Co-op Managed</span><span style="color:var(--slate);font-size:13px">Community economic benefit</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hbox reveal"><h4>🌱 Environmental Commitment</h4><p>Reforestation is a core part of Kekeli's sustainability strategy — restoring degraded land, supporting biodiversity and creating a lasting economic asset that reduces community dependence on external funding over time.</p></div>
+    <div class="ph reveal" style="height:200px;border-radius:16px;margin-top:20px;border:1px solid rgba(46,139,87,.15)"><div class="phi">🥥</div><div class="pht">Coconut planting, Akeve · Photo Placeholder</div></div>
+  </div></section>
+</div>
+
+<!-- ══ COMMUNITY & HEALTH ══════════════════════════════ -->
+
+<div id="work-edu" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Community Development &amp; Health</div><h1>Community-Led Programmes</h1><p>Collaborating with local communities to identify and address their needs — from school livelihood projects to scholarships and malaria prevention.</p></div></div>
+  <section class="sec"><div class="wrap"><div class="g2">
+    <div class="card reveal" onclick="go('edu-orchard')"><div class="ph phlg"><div class="phi">🍊</div><div class="pht">Orchard Photo · Placeholder</div></div><div class="cb"><span class="chip cg">Volta School for the Deaf</span><h3>School Orchard Programme</h3><p>A mixed-fruit orchard established within the school grounds, providing fresh produce for student nutrition and income from surplus sales.</p><div class="card-arrow">Orchard Details →</div></div></div>
+    <div class="card reveal reveal-delay-1" onclick="go('edu-poultry')"><div class="ph phlg"><div class="phi">🐔</div><div class="pht">Poultry Farm Photo · Placeholder</div></div><div class="cb"><span class="chip cg">Volta School for the Deaf</span><h3>School Poultry Farm</h3><p>A poultry farming initiative providing eggs and protein for student meals while training students in practical agricultural and business skills.</p><div class="card-arrow">Poultry Details →</div></div></div>
+  </div>
+  <div class="g3" style="margin-top:20px">
+    <div class="card reveal"><div class="cb"><div style="font-size:32px;margin-bottom:10px">🎓</div><h3>Scholarships</h3><p>Scholarships awarded to deserving students from rural communities, enabling them to pursue their educational goals.</p></div></div>
+    <div class="card reveal reveal-delay-1"><div class="cb"><div style="font-size:32px;margin-bottom:10px">💊</div><h3>Malaria Testing &amp; Antibiotics</h3><p>250 rounds of antibiotics provided for those testing positive for malaria, alongside annual community testing clinics purchased through a local hospital in Akatsi.</p></div></div>
+    <div class="card reveal reveal-delay-2"><div class="cb"><div style="font-size:32px;margin-bottom:10px">🏥</div><h3>Dzogadze Medical Clinic</h3><p>A renovated walk-in medical clinic in Dzogadze, piped directly from the community borehole for clean water access on site.</p></div></div>
+  </div>
+  </div></section>
+</div>
+
+<div id="impact" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Accountability &amp; Transparency</div><h1>Impact &amp; Reports</h1><p>Numbers that tell the truth. Reports that build trust. Kekeli publishes its impact data and financial summaries for donors, partners and the communities we serve.</p></div></div>
+  <section class="sec"><div class="wrap">
+    <div class="lbl reveal">Key Metrics</div><h2 class="h2 reveal reveal-delay-1" style="margin-bottom:28px">The Numbers Behind the Work</h2>
+    <div class="g4" style="margin-bottom:44px">
+      <div class="reveal" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:20px;padding:28px 18px;text-align:center;border:1px solid rgba(46,139,87,.15)"><div class="impnum"><span class="cnum" data-target="75">0</span></div><div class="lbl" style="margin-top:8px">Boreholes</div></div>
+      <div class="reveal reveal-delay-1" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:20px;padding:28px 18px;text-align:center;border:1px solid rgba(46,139,87,.15)"><div class="impnum" style="font-size:clamp(24px,3.5vw,46px)">GHS<span class="cnum" data-target="4">0</span>.5M</div><div class="lbl" style="margin-top:8px">Total Assets</div></div>
+      <div class="reveal reveal-delay-2" style="background:linear-gradient(135deg,var(--cream),#fef5e0);border-radius:20px;padding:28px 18px;text-align:center;border:1px solid rgba(200,149,42,.2)"><div class="impnum" style="font-size:clamp(24px,3.5vw,46px);color:var(--gold)"><span class="cnum" data-target="130">0</span>K+</div><div class="lbl" style="margin-top:8px;color:var(--gold)">People Served</div></div>
+      <div class="reveal reveal-delay-3" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:20px;padding:28px 18px;text-align:center;border:1px solid rgba(46,139,87,.15)"><div class="impnum"><span class="cnum" data-target="250">0</span>+</div><div class="lbl" style="margin-top:8px">Villages Served</div></div>
+    </div>
+    <div class="abox reveal">
+      <div class="lbl">Programme Expenditure</div><h3 class="h3" style="margin:8px 0 20px">Where Funds Go</h3>
+      <div class="arow"><div class="albl"><span>💧 Water &amp; BMC Maintenance</span><span>52%</span></div><div class="atrack"><div class="afill" id="af1" style="width:0"></div></div></div>
+      <div class="arow"><div class="albl"><span>🌴 Reforestation</span><span>18%</span></div><div class="atrack"><div class="afill" id="af2" style="width:0"></div></div></div>
+      <div class="arow"><div class="albl"><span>🌾 Microfinance</span><span>14%</span></div><div class="atrack"><div class="afill" id="af3" style="width:0"></div></div></div>
+      <div class="arow"><div class="albl"><span>🎓 Community, Scholarships &amp; Health</span><span>10%</span></div><div class="atrack"><div class="afill" id="af4" style="width:0"></div></div></div>
+      <div class="arow" style="margin-bottom:0"><div class="albl"><span>🏛️ Governance &amp; Admin</span><span>6%</span></div><div class="atrack"><div class="afill" id="af5" style="width:0"></div></div></div>
+    </div>
+    <div class="lbl reveal" style="margin-top:48px">Publications</div><h2 class="h2 reveal reveal-delay-1" style="margin-bottom:24px">Annual Reports &amp; Documents</h2>
+    <div class="g3">
+      <div class="card reveal"><div class="cb"><div style="font-size:36px;margin-bottom:10px">📄</div><h3>Annual Report 2025</h3><p>Full programme summary, financial overview and impact assessment for the 2025 operational year.</p><button class="btn bg bsm" style="margin-top:16px" onclick="alert('PDF download available upon production deployment.')">⬇ Download PDF</button></div></div>
+      <div class="card reveal reveal-delay-1" onclick="go('work-water')"><div class="cb"><div style="font-size:36px;margin-bottom:10px">📊</div><h3>Borehole Location Register</h3><p>Complete list of all 75 borehole locations with GPS coordinates, commissioning dates and status.</p><div class="card-arrow">View Interactive Map →</div></div></div>
+      <div class="card reveal reveal-delay-2"><div class="cb"><div style="font-size:36px;margin-bottom:10px">💰</div><h3>Financial Summary 2025</h3><p>Audited financial summary covering income, expenditure and asset valuation for grant due diligence.</p><button class="btn bg bsm" style="margin-top:16px" onclick="alert('Contact info@kekeli4needy.com to request this document.')">Request Document</button></div></div>
+    </div>
+  </div></section>
+</div>
+
+
+<div id="partners" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Collaboration &amp; Trust</div><h1>Partners &amp; Donors</h1><p>Kekeli's work is made possible by a network of committed donors, institutional partners and government collaborators across Ghana and internationally.</p></div></div>
+  <section class="sec"><div class="wrap">
+    <div class="lbl reveal">Current Partners</div><h2 class="h2 reveal reveal-delay-1" style="margin-bottom:24px">Those Who Make It Possible</h2>
+    <div class="plogos reveal" style="margin-bottom:52px">
+      <div class="plogo"><span>🇨🇦</span>Canadian Donor Network</div>
+      <div class="plogo"><span>🏛️</span>Akatsi South District Assembly</div>
+      <div class="plogo"><span>💧</span>Ghana Water Company</div>
+      <div class="plogo"><span>🏫</span>Volta School for the Deaf</div>
+      <div class="plogo"><span>🌍</span>WASH Partners Ghana</div>
+      <div class="plogo"><span>🤝</span>Community Water Committees</div>
+    </div>
+    <div class="lbl reveal">Become a Partner</div><h2 class="h2 reveal reveal-delay-1" style="margin-bottom:10px">Partner With Kekeli</h2>
+    <p class="sub reveal reveal-delay-2">We welcome partnerships with corporate CSR programmes, international NGOs, government agencies and development finance institutions. We offer full transparency, structured reporting and named acknowledgement.</p>
+    <div class="g3" style="margin-bottom:32px">
+      <div class="ocrd reveal"><div style="font-size:28px">🏢</div><h4>Corporate CSR</h4><p>Name a borehole. Fund a community. Receive full reporting, photo documentation and beneficiary impact data for your CSR programme.</p></div>
+      <div class="ocrd reveal reveal-delay-1"><div style="font-size:28px">🌍</div><h4>Development Partners</h4><p>Institutional partnerships with NGOs, development banks and bilateral aid programmes seeking WASH delivery partners in Ghana.</p></div>
+      <div class="ocrd reveal reveal-delay-2"><div style="font-size:28px">🏛️</div><h4>Government &amp; Assembly</h4><p>District Assembly collaboration for jointly-funded water infrastructure, community development and WASH programming.</p></div>
+    </div>
+    <button class="btn bg reveal" onclick="go('contact')">Get In Touch →</button>
+  </div></section>
+</div>
+
+
+<div id="news" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Latest</div><h1>News &amp; Updates</h1><p>Press releases, programme milestones and institutional announcements from Kekeli Co-operative.</p></div></div>
+  <section class="sec"><div class="wrap"><div class="g3">
+    <div class="card reveal" onclick="go('n1')"><div class="ph"><div class="phi">💧</div></div><div class="cb"><div class="nmeta"><span class="chip cg">Water</span>June 2026</div><h3>Kekeli Commissions 75th Mechanised Borehole</h3><p>Togbe Dorglo Anumah VI commissions the 75th borehole at Gui, Akatsi South Municipality — within the Avenor Traditional Area.</p><div class="card-arrow">Read Full Story →</div></div></div>
+    <div class="card reveal reveal-delay-1" onclick="go('n2')"><div class="ph"><div class="phi">🏫</div></div><div class="cb"><div class="nmeta"><span class="chip cg">Education</span>March 2026</div><h3>Orchard &amp; Poultry at Volta School for the Deaf</h3><p>Two new livelihood projects support nutrition and income generation for deaf students and staff.</p><div class="card-arrow">Read Full Story →</div></div></div>
+    <div class="card reveal reveal-delay-2" onclick="go('n3')"><div class="ph"><div class="phi">📊</div></div><div class="cb"><div class="nmeta"><span class="chip cau">Governance</span>January 2026</div><h3>Annual Report 2025 Published</h3><p>Kekeli publishes its 2025 programme summary, reaffirming its commitment to donor accountability.</p><div class="card-arrow">Read Full Story →</div></div></div>
+    <div class="card reveal" onclick="go('partners')"><div class="cb"><div class="nmeta"><span class="chip cbl">Partnership</span>October 2025</div><h3>District Assembly Signs MOU with Kekeli</h3><p>Akatsi South District Assembly formalises a partnership for jointly-funded water infrastructure delivery.</p><div class="card-arrow">Read Full Story →</div></div></div>
+    <div class="card reveal reveal-delay-1" onclick="go('about')"><div class="cb"><div class="nmeta"><span class="chip cau">Finance</span>July 2025</div><h3>$500,000 International Funding Milestone Reached</h3><p>Kekeli Co-operative confirms over half a million US dollars received in international contributions from Canadian supporters.</p><div class="card-arrow">Read Full Story →</div></div></div>
+    <div class="card reveal reveal-delay-2" onclick="go('work-agri')"><div class="cb"><div class="nmeta"><span class="chip cg">Reforestation</span>April 2025</div><h3>Reforestation Programme Underway in Dzogadze &amp; Akeve</h3><p>The Co-operative expands its palm and coconut planting programme, adding cultivated acreage across both reforestation sites.</p><div class="card-arrow">Read Full Story →</div></div></div>
+  </div></div></section>
+</div>
+
+<!-- NEWS ARTICLES -->
+
+<div id="contact" class="mainsec">
+  <div class="dh"><div class="dh-inner"><div class="lbl">Get In Touch</div><h1>Contact Kekeli Co-operative</h1><p>For donor enquiries, partnership proposals, media requests or community referrals, we respond to all correspondence within 3 working days.</p></div></div>
+  <section class="sec"><div class="wrap">
+    <div class="g2" style="align-items:start">
+      <div>
+        <div class="lbl reveal">Our Details</div><h2 class="h2 reveal reveal-delay-1" style="font-size:clamp(20px,3vw,30px);margin-bottom:28px">Reach Us Directly</h2>
+        <div class="citem reveal"><div class="cico">📍</div><div><div class="clbl">Field / Registered Address</div><div class="cval">Kekeli Co-operative For The Needy LBG</div><div class="csub">Akatsi South District, Volta Region<br>Ghana, West Africa</div></div></div>
+        <div class="citem reveal reveal-delay-1"><div class="cico">🏠</div><div><div class="clbl">Correspondence Address</div><div class="cval">GK-0051-9982, Devtraco Road</div><div class="csub">Lagoon View, Community 25, Tema, Ghana</div></div></div>
+        <div class="citem reveal reveal-delay-1"><div class="cico">📞</div><div><div class="clbl">Telephone</div><div class="cval">+233 594 972 754</div><div class="csub" style="margin-top:4px"><a href="tel:+233241618161" style="color:var(--jade);font-weight:700">+233 241 618 161</a> · <a href="tel:+233209570882" style="color:var(--jade);font-weight:700">+233 209 570 882</a></div><div class="csub">Mon–Fri, 8:00 AM – 5:00 PM GMT</div></div></div>
+        <div class="citem reveal reveal-delay-2"><div class="cico">✉️</div><div><div class="clbl">Email</div><div class="cval">info@kekeli4needy.com</div><div class="csub">Auto-acknowledgement within 24 hours</div></div></div>
+        <div class="citem reveal reveal-delay-3"><div class="cico">🔒</div><div><div class="clbl">Registration</div><div class="cval">LBG No. CG012345</div><div class="csub">Companies Act, 2019 (Act 992), Ghana</div></div></div>
+        <div class="reveal" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:16px;padding:20px;border:1px solid rgba(46,139,87,.15);font-size:13.5px;color:var(--slate)">🗺️ <strong style="color:var(--forest)">Map:</strong> Interactive Google Map showing Akatsi South District, Volta Region will be embedded in production.</div>
+      </div>
+      <div>
+        <div class="lbl reveal">Send a Message</div><h2 class="h2 reveal reveal-delay-1" style="font-size:clamp(20px,3vw,30px);margin-bottom:22px">Enquiry Form</h2>
+        <div class="dform reveal reveal-delay-1" id="contactForm">
+          <input class="fin" id="cf-name" type="text" placeholder="Full Name *">
+          <input class="fin" id="cf-email" type="email" placeholder="Email Address *">
+          <input class="fin" id="cf-org" type="text" placeholder="Organisation (if applicable)">
+          <select class="fin fsel" id="cf-type"><option value="">Enquiry Type *</option><option>Donor / Funding</option><option>Partnership / CSR</option><option>Media / Press</option><option>Government / Assembly</option><option>Community Referral</option><option>General</option></select>
+          <textarea class="fin" id="cf-msg" rows="5" placeholder="Your message *" style="resize:vertical"></textarea>
+          <div id="cf-err" style="color:#c0392b;font-size:13px;margin-bottom:10px;display:none"></div>
+          <div id="cf-ok" style="background:var(--foam);border:1px solid var(--jade);border-radius:10px;padding:14px;font-size:14px;color:var(--forest);margin-bottom:12px;display:none">✅ Thank you. Your message has been received. We'll respond to your email within 48 hours.</div>
+          <button class="btn bg bfull" onclick="submitContact()">Send Message →</button>
+          <p style="font-size:11.5px;color:var(--slate);margin-top:10px;text-align:center">By submitting you agree to our <button onclick="go('privacy')" style="background:none;border:none;color:var(--moss);cursor:pointer;font-size:11.5px;font-family:inherit;font-weight:700">Privacy Policy</button></p>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+
+<div id="donate" class="mainsec">
+  <div class="dh" style="background:linear-gradient(150deg,var(--deep),#3d2a05,#7a5a2a)"><div class="dh-inner"><div class="lbl" style="color:var(--amber)">Give Today</div><h1>Every Cedi Builds a Future</h1><p>Your donation funds mechanised boreholes, reforestation, microfinance and community programmes for Ghana's most underserved communities — with full transparency on how every cedi is spent.</p></div></div>
+  <section class="sec"><div class="wrap">
+    <div class="g2" style="align-items:start">
+      <div>
+        <div class="lbl reveal">Make a Donation</div>
+        <div class="dform reveal reveal-delay-1" id="donateForm">
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--forest);font-size:20px;margin-bottom:18px">Choose Your Impact</h3>
+
+          <div class="dtab-row">
+            <button class="dtab on" id="tab-card" onclick="switchTab('card')">💳 Card / Online</button>
+            <button class="dtab" id="tab-bank" onclick="switchTab('bank')">🏦 Bank Transfer</button>
+          </div>
+
+          <div id="pane-card">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+              <input class="fin" id="d-name" type="text" placeholder="Full Name">
+              <input class="fin" id="d-email" type="email" placeholder="Email Address *">
+            </div>
+            <div class="freq-row">
+              <button class="freq-btn on" id="freq-once" onclick="setFreq('once')">One-time</button>
+              <button class="freq-btn" id="freq-monthly" onclick="setFreq('monthly')">Monthly</button>
+              <button class="freq-btn" id="freq-annually" onclick="setFreq('annually')">Annually</button>
+            </div>
+            <div class="amtg">
+              <div class="amtb" onclick="selAmt(this,20)">$20</div>
+              <div class="amtb" onclick="selAmt(this,50)">$50</div>
+              <div class="amtb" onclick="selAmt(this,100)">$100</div>
+              <div class="amtb" onclick="selAmt(this,250)">$250</div>
+              <div class="amtb" onclick="selAmt(this,500)">$500</div>
+              <div class="amtb" onclick="selAmt(this,'custom')">Other</div>
+            </div>
+            <input class="fin" id="d-custom" type="number" min="1" placeholder="Custom amount (USD)" style="display:none;margin-bottom:12px">
+            <select class="fin fsel" id="d-fund">
+              <option>Unrestricted — Greatest Need</option>
+              <option>💧 Water Sustainability</option>
+              <option>🌴 Reforestation</option>
+              <option>🌾 Microfinance</option>
+              <option>🎓 Community, Scholarships &amp; Health</option>
+            </select>
+            <div id="d-err" style="color:#c0392b;font-size:13px;margin-bottom:10px;display:none"></div>
+            <button class="btn bp bfull" style="font-size:16px;padding:16px" onclick="initPaystack()">❤️ Donate Securely →</button>
+            <div style="display:flex;justify-content:center;gap:14px;margin-top:12px;flex-wrap:wrap">
+              <span style="font-size:11px;color:var(--slate)">🔒 SSL Encrypted</span>
+              <span style="font-size:11px;color:var(--slate)">🏦 Paystack</span>
+              <span style="font-size:11px;color:var(--slate)">💳 Visa / MC / Amex</span>
+              <span style="font-size:11px;color:var(--slate)">📧 Receipt by email</span>
+            </div>
+          </div>
+
+          <div id="pane-bank" style="display:none">
+            <div class="bank-box">
+              <h4>🏦 Bank Transfer Details</h4>
+              <div class="bank-row"><span class="bank-key">Account Name</span><span class="bank-val" style="font-family:inherit;font-weight:700">DORGLO ANUMAH VI</span></div>
+              <div class="bank-row"><span class="bank-key">Bank</span><span class="bank-val" style="font-family:inherit">GCB PLC (Ghana Commercial Bank)</span></div>
+              <div class="bank-row"><span class="bank-key">Account Number</span><span class="bank-val">2181010031316</span></div>
+              <div class="bank-row"><span class="bank-key">Branch</span><span class="bank-val" style="font-family:inherit">Akosombo Branch</span></div>
+              <div class="bank-row"><span class="bank-key">Branch Address</span><span class="bank-val" style="font-family:inherit">Asuogyaman–Atimpoku Road, Akosombo, Eastern Region, Ghana</span></div>
+              <div class="bank-row"><span class="bank-key">Bank Tel</span><span class="bank-val">+233 559 037 084</span></div>
+              <div class="bank-row"><span class="bank-key">SWIFT Code</span><span class="bank-val">GHCBGHAC</span></div>
+              <div class="bank-row"><span class="bank-key">Currency</span><span class="bank-val" style="font-family:inherit">USD (or GHS equivalent)</span></div>
+            </div>
+            <div class="bank-note">
+              ℹ️ <strong>After transferring:</strong> Please email <a href="mailto:info@kekeli4needy.com" style="color:#7a5a1a">info@kekeli4needy.com</a> with your full name, amount, date of transfer and bank reference number so we can acknowledge your donation promptly.<br><br>
+              📌 International transfers using SWIFT code <strong>GHCBGHAC</strong> may take 2–5 business days. Please include <strong>KEKELI DONATION</strong> in the transfer reference field.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="lbl reveal">Your Money in Action</div><h2 class="h2 reveal reveal-delay-1" style="font-size:clamp(20px,3vw,30px);margin-bottom:20px">What Your Donation Does</h2>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px">
+          <div class="reveal" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:16px;padding:18px 20px;border:1px solid rgba(46,139,87,.15)"><div style="font-family:'Instrument Serif',serif;font-size:22px;color:var(--moss);margin-bottom:4px">$20</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--forest);font-size:13px;margin-bottom:3px">Borehole Maintenance Visit</div><div style="font-size:12px;color:var(--slate)">Keeps an existing borehole running, serving dozens of families for another month.</div></div>
+          <div class="reveal reveal-delay-1" style="background:linear-gradient(135deg,var(--foam),var(--mist));border-radius:16px;padding:18px 20px;border:1px solid rgba(46,139,87,.15)"><div style="font-family:'Instrument Serif',serif;font-size:22px;color:var(--moss);margin-bottom:4px">$100</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--forest);font-size:13px;margin-bottom:3px">New Pump Component</div><div style="font-size:12px;color:var(--slate)">Replaces a critical pump part, restoring water access to a community of 300+ people.</div></div>
+          <div class="reveal reveal-delay-2" style="background:linear-gradient(135deg,var(--cream),#fef5e0);border-radius:16px;padding:18px 20px;border:1px solid rgba(200,149,42,.2)"><div style="font-family:'Instrument Serif',serif;font-size:22px;color:var(--gold);margin-bottom:4px">$500+</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--forest);font-size:13px;margin-bottom:3px">Contributes to a New Borehole</div><div style="font-size:12px;color:var(--slate)">A step toward the GHS 60,000 cost of installing a new mechanised borehole — named in your honour if desired.</div></div>
+        </div>
+        <div class="abox reveal">
+          <div class="lbl">Programme Split</div>
+          <div class="arow" style="margin-top:12px"><div class="albl"><span>💧 Water &amp; BMC Maintenance</span><span>52%</span></div><div class="atrack"><div class="afill" id="daf1" style="width:0"></div></div></div>
+          <div class="arow"><div class="albl"><span>🌴 Reforestation</span><span>18%</span></div><div class="atrack"><div class="afill" id="daf2" style="width:0"></div></div></div>
+          <div class="arow"><div class="albl"><span>🌾 Microfinance</span><span>14%</span></div><div class="atrack"><div class="afill" id="daf3" style="width:0"></div></div></div>
+          <div class="arow"><div class="albl"><span>🎓 Community, Scholarships &amp; Health</span><span>10%</span></div><div class="atrack"><div class="afill" id="daf4" style="width:0"></div></div></div>
+          <div class="arow" style="margin-bottom:0"><div class="albl"><span>🏛️ Admin &amp; Governance</span><span>6%</span></div><div class="atrack"><div class="afill" id="daf5" style="width:0"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+</div>
+
+
+<div id="pg-edu-orchard" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('work-edu')">Community &amp; Health</button><span class="bsep">›</span><span>Orchard Programme</span></div></div>
+  <div class="dh"><div class="dh-inner"><div class="lbl">Orchard · Volta School for the Deaf</div><h1>Mixed-Fruit Orchard Programme</h1><p>Planted and managed in partnership with Kekeli Co-operative, the school orchard provides nutrition, income and vocational training for deaf students.</p></div></div>
+  <section class="sec"><div class="wrap" style="max-width:760px">
+    <div class="ph pher reveal" style="margin-bottom:28px"><div class="phi">🍊🍍🌴</div><div class="pht">Orchard Site · kekeli-orchard-volta-school-deaf.jpg</div></div>
+    <p class="reveal" style="color:var(--slate);font-size:15px;line-height:1.78;margin-bottom:14px">The orchard was established in March 2025 with a mix of citrus, mango, pawpaw and pineapple plants. Students participate in cultivation, harvesting and produce management as part of a structured vocational curriculum designed for hearing-impaired learners.</p>
+    <p class="reveal reveal-delay-1" style="color:var(--slate);font-size:15px;line-height:1.78;margin-bottom:22px">Surplus produce is sold at local markets, with income directed to the school's feeding programme. The orchard is expected to reach full production capacity by 2027.</p>
+    <div class="hbox reveal reveal-delay-2"><h4>🌱 Programme Outcomes (Target)</h4><p>60 students engaged in weekly orchard activities · GHS 12,000 projected annual produce income · 100% of student lunch meals incorporating orchard produce by Q3 2026.</p></div>
+  </div></section>
+</div>
+<div id="pg-edu-poultry" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('work-edu')">Community &amp; Health</button><span class="bsep">›</span><span>Poultry Farm</span></div></div>
+  <div class="dh"><div class="dh-inner"><div class="lbl">Poultry Farm · Volta School for the Deaf</div><h1>School Poultry Farm</h1><p>Eggs every day. Skills for life. The poultry farm nourishes students and builds practical vocational competency in animal husbandry and business management.</p></div></div>
+  <section class="sec"><div class="wrap" style="max-width:760px">
+    <div class="ph pher reveal" style="margin-bottom:28px"><div class="phi">🐔</div><div class="pht">Poultry Farm · kekeli-poultry-volta-school-deaf.jpg</div></div>
+    <p class="reveal" style="color:var(--slate);font-size:15px;line-height:1.78;margin-bottom:22px">The poultry farm houses laying hens and broilers, managed by students under staff supervision. Daily egg collection, feed management and health monitoring are integrated into the school's practical skills curriculum.</p>
+    <div class="hbox reveal reveal-delay-1"><h4>🥚 Current Capacity</h4><p>120 laying hens · Daily egg production supplementing school meals · Surplus sold to local community · Vocational certificate pathway under development with Ghana Education Service.</p></div>
+  </div></section>
+</div>
+<div id="pg-n1" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('news')">News</button><span class="bsep">›</span><span>75th Borehole</span></div></div>
+  <section class="sec"><div class="wrap" style="max-width:760px">
+    <div class="nmeta" style="margin-bottom:14px"><span class="chip cg">Water</span>June 24, 2026</div>
+    <h1 style="font-family:'Instrument Serif',serif;font-size:clamp(26px,4vw,44px);color:var(--forest);line-height:1.18;margin-bottom:18px">Kekeli Co-operative Commissions its 75th Mechanised Borehole at Gui</h1>
+    <div class="ph pher reveal" style="margin-bottom:26px"><div class="phi">💧</div><div class="pht">Commissioning Ceremony, Gui · kekeli-borehole-75-gui.jpg</div></div>
+    <p style="color:var(--slate);font-size:17px;line-height:1.8;margin-bottom:14px">Kekeli Co-operative For The Needy (LBG) has commissioned a mechanised borehole at Gui in the Akatsi South Municipality of the Volta Region — the 75th borehole commissioned within the Avenor Traditional Area. The facility aims to improve access to safe drinking water and reduce the prevalence of water-borne diseases including cholera, bilharzia and typhoid fever.</p>
+    <p style="color:var(--slate);font-size:15px;line-height:1.8;margin-bottom:14px">Togbe Dorglo Anumah VI, Paramount Chief of Avenor and Country Director of the Organisation, commended Brian Mosko, Director of Fundraising from Canada, and Michael "D.D." Nyahe, Director of Operations, who has personally supervised the construction and commissioning of all 75 boreholes. "This is the 75th borehole we are commissioning today within our Avenor land," Togbe Anumah said. "I appreciate the true relationship between these two partners. We can only build Avenor together."</p>
+    <p style="color:var(--slate);font-size:15px;line-height:1.8;margin-bottom:22px">Torgbui Ahui III of Suipe Ahiakpakope chaired the occasion. Community representative Joseph Akana thanked the organisation and appealed for a computer laboratory to serve the three sister schools in the area, and support for modern mechanised farming. The organising committee continued its tour the next day to inspect previously commissioned sites, including Kalekope.</p>
+    <div class="quote"><blockquote>"This is the 75th borehole we are commissioning today within our Avenor land."</blockquote><div class="qattr">Togbe Dorglo Anumah VI · Paramount Chief of Avenor, Country Director of Kekeli</div></div>
+    <div style="margin-top:28px"><button class="btn bg" onclick="go('work-water')">← Explore All Borehole Sites</button></div>
+  </div></section>
+</div>
+<div id="pg-n2" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('news')">News</button><span class="bsep">›</span><span>Volta School Projects</span></div></div>
+  <section class="sec"><div class="wrap" style="max-width:760px">
+    <div class="nmeta" style="margin-bottom:14px"><span class="chip cg">Education</span>March 25, 2026</div>
+    <h1 style="font-family:'Instrument Serif',serif;font-size:clamp(26px,4vw,44px);color:var(--forest);line-height:1.18;margin-bottom:18px">Orchard and Poultry Farm Launched at the Volta School for the Deaf</h1>
+    <div class="ph pher reveal" style="margin-bottom:26px"><div class="phi">🏫🍊🐔</div><div class="pht">School Programme Photo · Placeholder</div></div>
+    <p style="color:var(--slate);font-size:17px;line-height:1.8;margin-bottom:14px">Two new livelihood and nutrition programmes have been launched at the Volta School for the Deaf in partnership with Kekeli Co-operative For The Needy LBG.</p>
+    <p style="color:var(--slate);font-size:15px;line-height:1.8;margin-bottom:20px">The orchard programme planted mangoes, pawpaw, citrus and pineapple across the school grounds. The poultry farm launched with 120 laying hens, with daily egg production supplementing the school feeding programme.</p>
+    <div class="hbox"><h4>👨‍🌾 Student Vocational Integration</h4><p>Both programmes are integrated into the school's vocational curriculum, providing practical, income-generating skills to students with hearing impairments.</p></div>
+    <div style="margin-top:28px"><button class="btn bg" onclick="go('work-edu')">← Community &amp; Health</button></div>
+  </div></section>
+</div>
+<div id="pg-n3" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('news')">News</button><span class="bsep">›</span><span>Annual Report 2025</span></div></div>
+  <section class="sec"><div class="wrap" style="max-width:760px">
+    <div class="nmeta" style="margin-bottom:14px"><span class="chip cau">Governance</span>January 2026</div>
+    <h1 style="font-family:'Instrument Serif',serif;font-size:clamp(26px,4vw,44px);color:var(--forest);line-height:1.18;margin-bottom:18px">Kekeli Co-operative Publishes 2025 Annual Report</h1>
+    <p style="color:var(--slate);font-size:17px;line-height:1.8;margin-bottom:14px">Kekeli Co-operative For The Needy LBG has published its 2025 Annual Report, covering programme delivery, financial stewardship and institutional governance across the full operational year.</p>
+    <p style="color:var(--slate);font-size:15px;line-height:1.8;margin-bottom:24px">The report documents the commissioning of seven new boreholes, expansion of the reforestation programme in Dzogadze and Akeve, and continued livelihood initiatives at the Volta School for the Deaf. Full financial statements, audited by an independent firm, are included as an annex.</p>
+    <button class="btn bp" onclick="alert('PDF download available upon production deployment.')">⬇ Download Annual Report 2025</button>
+  </div></section>
+</div>
+
+<div id="pg-privacy" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('about')">About Us</button><span class="bsep">›</span><span>Privacy Policy</span></div></div>
+  <section class="sec"><div class="wrap"><div class="policy">
+    <div class="lbl">Legal &amp; Compliance</div><h1 class="h2" style="margin-bottom:6px">Privacy Policy</h1><p style="color:var(--slate);font-size:12px;margin-bottom:28px">Last updated: April 2026 · Effective immediately</p>
+    <h2>1. Who We Are</h2><p>Kekeli Co-operative For The Needy LBG ("Kekeli", "we", "us") is a Limited by Guarantee company registered in Ghana under the Companies Act, 2019 (Act 992). Our registered address is Akatsi South District, Volta Region, Ghana.</p>
+    <h2>2. What Data We Collect</h2><ul><li>Contact information (name, email, phone) submitted via our enquiry form or donation process</li><li>Donation transaction records (amount, currency, date, fund allocation preference)</li><li>Communication records for grant and partnership correspondence</li><li>Anonymised website usage data via analytics tools</li></ul>
+    <h2>3. How We Use Your Data</h2><ul><li>To process donations and issue receipts</li><li>To respond to enquiries and maintain correspondence</li><li>To send programme updates and annual reports (with consent)</li><li>To meet our legal obligations as a registered institution</li></ul>
+    <h2>4. Data Sharing</h2><p>We do not sell or share personal data with third parties for marketing purposes. Data may be shared with our auditors, legal advisors or as required by Ghanaian law.</p>
+    <h2>5. Beneficiary Data</h2><p>All beneficiary stories, photographs and personal data are collected with explicit written consent. Consent documentation is held securely on file and available for review by accredited grant bodies.</p>
+    <h2>6. Your Rights</h2><p>You may request access to, correction of or deletion of any personal data we hold by emailing <a href="mailto:info@kekeli4needy.com">info@kekeli4needy.com</a>. We will respond within 30 days.</p>
+    <h2>7. Contact</h2><p>All data protection enquiries: <a href="mailto:info@kekeli4needy.com">info@kekeli4needy.com</a></p>
+  </div></div></section>
+</div>
+<div id="pg-safeguarding" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('about')">About Us</button><span class="bsep">›</span><span>Safeguarding</span></div></div>
+  <section class="sec"><div class="wrap"><div class="policy">
+    <div class="lbl">Safeguarding</div><h1 class="h2" style="margin-bottom:14px">Safeguarding &amp; Ethics Policy</h1>
+    <div class="pbadge">🛡️ Adopted by the Directors · April 2026 · Reviewed Annually</div>
+    <h2>1. Our Commitment</h2><p>Kekeli Co-operative For The Needy LBG is committed to creating and maintaining a safe and positive environment for all individuals we work with, including children, young people and vulnerable adults in our programme communities.</p>
+    <h2>2. Scope</h2><p>This policy applies to all directors, staff, volunteers, contractors and partners engaged in Kekeli Co-operative's programmes, site visits or communications.</p>
+    <h2>3. Core Principles</h2><ul><li>The welfare of children and vulnerable persons is paramount</li><li>All persons are treated with dignity, respect and equality</li><li>No form of abuse, exploitation or discrimination will be tolerated</li><li>All concerns are taken seriously and responded to promptly</li></ul>
+    <h2>4. Photography &amp; Consent</h2><p>All photographs or videos featuring community members, children or programme participants are taken only with written informed consent. No images are published without documented consent.</p>
+    <h2>5. Reporting Concerns</h2><p>Any safeguarding concern should be reported immediately to the Designated Safeguarding Lead at <a href="mailto:info@kekeli4needy.com">info@kekeli4needy.com</a>. All reports are treated confidentially and investigated within 48 hours.</p>
+    <h2>6. International Standards</h2><p>Kekeli Co-operative aligns this policy with internationally recognised safeguarding frameworks including BOND's Safeguarding Standard for international NGOs, and commits to regular review as standards evolve.</p>
+  </div></div></section>
+</div>
+<div id="pg-cookies" class="pg">
+  <div class="bc"><div class="bci"><button onclick="go('home')">Home</button><span class="bsep">›</span><button onclick="go('about')">About Us</button><span class="bsep">›</span><span>Cookie Policy</span></div></div>
+  <section class="sec"><div class="wrap"><div class="policy">
+    <div class="lbl">Cookie Policy</div><h1 class="h2" style="margin-bottom:6px">Cookie Policy</h1><p style="color:var(--slate);font-size:12px;margin-bottom:28px">Last updated: April 2026</p>
+    <h2>What Are Cookies?</h2><p>Cookies are small text files stored on your device when you visit a website. They help websites function correctly and provide information about how users interact with the site.</p>
+    <h2>Cookies We Use</h2><ul><li><strong>Essential Cookies:</strong> Required for the website to function. Cannot be disabled.</li><li><strong>Analytics Cookies:</strong> Anonymised usage data. We use Google Analytics.</li><li><strong>Preference Cookies:</strong> Remember your settings and preferences on return visits.</li></ul>
+    <h2>Managing Cookies</h2><p>You can manage or disable cookies via your browser settings. Disabling certain cookies may affect website functionality.</p>
+    <h2>Contact</h2><p>Questions about cookie use? Email <a href="mailto:info@kekeli4needy.com">info@kekeli4needy.com</a></p>
+  </div></div></section>
+</div>
+
+
+<!-- ══ FOOTER ══════════════════════════════════════════ -->
+<footer>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="fbrand-mark"><img src="images/logo-mark.png" alt="Kekeli Co-operative logo"></div>
+      <strong>Kekeli Co-operative For The Needy</strong>
+      <div class="lbgb">LBG · REGISTERED · GHANA</div>
+      <p>Striving towards sustainability in access to water and community empowerment across Ghana's most underserved regions — governed with accountability, rooted in trust.</p>
+      <div class="rstrip">🔒 Reg. No. CG012345 · Companies Act, 2019 (Act 992)</div>
+    </div>
+    <div class="fcol"><h4>About</h4><ul>
+      <li><button onclick="go('about')">Our Story</button></li>
+      <li><button onclick="go('about')">Mission &amp; Vision</button></li>
+      <li><button onclick="go('about')">Our Directors</button></li>
+      <li><button onclick="go('safeguarding')">Safeguarding Policy</button></li>
+      <li><button onclick="go('privacy')">Privacy Policy</button></li>
+      <li><button onclick="go('cookies')">Cookie Policy</button></li>
+    </ul></div>
+    <div class="fcol"><h4>Our Work</h4><ul>
+      <li><button onclick="go('work-water')">Water Infrastructure</button></li>
+      <li><button onclick="go('work-agri')">Reforestation</button></li>
+      <li><button onclick="go('work-edu')">Community &amp; Health</button></li>
+      <li><button onclick="go('impact')">Impact &amp; Reports</button></li>
+      <li><button onclick="go('partners')">Partners &amp; Donors</button></li>
+    </ul></div>
+    <div class="fcol"><h4>Contact</h4><ul>
+      <li><a href="mailto:info@kekeli4needy.com">info@kekeli4needy.com</a></li>
+      <li><a href="tel:+233594972754">+233 594 972 754</a></li>
+      <li><a href="tel:+233241618161">+233 241 618 161</a></li>
+      <li><button onclick="go('donate')">❤️ Donate Now</button></li>
+      <li><button onclick="go('contact')">Send Enquiry</button></li>
+      <li><button onclick="go('news')">News &amp; Updates</button></li>
+    </ul></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 Kekeli Co-operative For The Needy LBG · All Rights Reserved · kekeli4needy.com</span>
+    <span><button onclick="go('privacy')">Privacy</button> · <button onclick="go('cookies')">Cookies</button> · <button onclick="go('safeguarding')">Safeguarding</button></span>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button class="scrolltop" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
+
+<!-- COOKIE CONSENT BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">🍪 We use essential and analytics cookies to improve your experience on this site. <button onclick="go('cookies')">Read our Cookie Policy</button></div>
+  <div class="cookie-actions">
+    <button class="cookie-btn-essential" onclick="cookieChoice('essential')">Essential Only</button>
+    <button class="cookie-btn-accept" onclick="cookieChoice('accept')">Accept All</button>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
