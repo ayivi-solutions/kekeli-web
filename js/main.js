@@ -146,15 +146,6 @@ function setFreq(f){
 }
 
 /* ── DONATE — TAB SWITCH ──────────────────────────────────────── */
-function switchTab(t){
-  document.getElementById('tab-card').classList.toggle('on',t==='card');
-  document.getElementById('tab-momo').classList.toggle('on',t==='momo');
-  document.getElementById('tab-bank').classList.toggle('on',t==='bank');
-  document.getElementById('pane-card').style.display=t==='card'?'block':'none';
-  document.getElementById('pane-momo').style.display=t==='momo'?'block':'none';
-  document.getElementById('pane-bank').style.display=t==='bank'?'block':'none';
-}
-
 /* ── PAYSTACK ──────────────────────────────────────────────────── */
 const PAYSTACK_KEY = 'pk_live_2ee1be5acbb3689353d2a46ed1b7bbb14a44fe4c';
 const FALLBACK_USD_TO_GHS = 11.35; // only used if the live rate fetch fails

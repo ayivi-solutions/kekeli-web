@@ -503,13 +503,8 @@
       <div>
         <div class="lbl reveal">Make a Donation</div>
         <div class="dform reveal reveal-delay-1" id="donateForm">
-          <h3 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--forest);font-size:20px;margin-bottom:18px">Choose Your Impact</h3>
-
-          <div class="dtab-row">
-            <button class="dtab on" id="tab-card" onclick="switchTab('card')">💳 Paystack</button>
-            <button class="dtab" id="tab-momo" onclick="switchTab('momo')">📱 Mobile Money</button>
-            <button class="dtab" id="tab-bank" onclick="switchTab('bank')">🏦 Bank Transfer</button>
-          </div>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--forest);font-size:20px;margin-bottom:6px">Choose Your Impact</h3>
+          <p style="font-size:12px;color:var(--slate);margin-bottom:18px">Pay by card or mobile money — processed securely through Paystack, direct to Kekeli's account. No manual transfers, no shared account numbers.</p>
 
           <div id="pane-card">
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
@@ -540,44 +535,16 @@
             </select>
             <div id="d-err" style="color:#c0392b;font-size:13px;margin-bottom:10px;display:none"></div>
             <button class="btn bp bfull" style="font-size:16px;padding:16px" onclick="initPaystack()">❤️ Donate Securely →</button>
-            <div style="display:flex;justify-content:center;gap:14px;margin-top:12px;flex-wrap:wrap">
+            <div class="card-badges">
+              <span class="badge-visa">VISA</span>
+              <span class="badge-mc"><span class="mc-circle mc-red"></span><span class="mc-circle mc-yellow"></span></span>
+              <span class="badge-amex">AMEX</span>
+              <span class="badge-momo">📱 Mobile Money</span>
+            </div>
+            <div style="display:flex;justify-content:center;gap:14px;margin-top:8px;flex-wrap:wrap">
               <span style="font-size:11px;color:var(--slate)">🔒 SSL Encrypted</span>
-              <span style="font-size:11px;color:var(--slate)">🏦 Paystack</span>
-              <span style="font-size:11px;color:var(--slate)">💳 Visa / MC / Amex</span>
+              <span style="font-size:11px;color:var(--slate)">🏦 Processed via Paystack</span>
               <span style="font-size:11px;color:var(--slate)">📧 Receipt by email</span>
-            </div>
-          </div>
-
-          <div id="pane-momo" style="display:none">
-            <div class="bank-box">
-              <h4>📱 Mobile Money (MTN MoMo)</h4>
-              <div class="bank-row"><span class="bank-key">Merchant / Till Number</span><span class="bank-val">571852</span></div>
-              <div class="bank-row"><span class="bank-key">Registered Name</span><span class="bank-val" style="font-family:inherit;font-weight:700">KEKELI CO-OPERATIVE FOR THE NEEDY</span></div>
-              <div class="bank-row"><span class="bank-key">Network</span><span class="bank-val" style="font-family:inherit">MTN Mobile Money</span></div>
-              <div class="bank-row"><span class="bank-key">Alternative Number</span><span class="bank-val">+233 594 972 754</span></div>
-              <div class="bank-row"><span class="bank-key">Currency</span><span class="bank-val" style="font-family:inherit">GHS</span></div>
-            </div>
-            <div class="bank-note">
-              ℹ️ <strong>To donate:</strong> Dial <strong>*170#</strong> on MTN, select Pay Bill / Merchant Payment, and enter Merchant Number <strong>571852</strong>. Confirm the name shown matches <strong>KEKELI CO-OPERATIVE FOR THE NEEDY</strong> before completing the transfer.<br><br>
-              📌 After sending, please email <a href="mailto:info@kekeli4needy.com" style="color:#7a5a1a">info@kekeli4needy.com</a> with your name, amount and the MoMo transaction ID so we can acknowledge your donation promptly.
-            </div>
-          </div>
-
-          <div id="pane-bank" style="display:none">
-            <div class="bank-box">
-              <h4>🏦 Bank Transfer Details</h4>
-              <div class="bank-row"><span class="bank-key">Account Name</span><span class="bank-val" style="font-family:inherit;font-weight:700">DORGLO ANUMAH VI</span></div>
-              <div class="bank-row"><span class="bank-key">Bank</span><span class="bank-val" style="font-family:inherit">GCB PLC (Ghana Commercial Bank)</span></div>
-              <div class="bank-row"><span class="bank-key">Account Number</span><span class="bank-val">2181010031316</span></div>
-              <div class="bank-row"><span class="bank-key">Branch</span><span class="bank-val" style="font-family:inherit">Akosombo Branch</span></div>
-              <div class="bank-row"><span class="bank-key">Branch Address</span><span class="bank-val" style="font-family:inherit">Asuogyaman–Atimpoku Road, Akosombo, Eastern Region, Ghana</span></div>
-              <div class="bank-row"><span class="bank-key">Bank Tel</span><span class="bank-val">+233 559 037 084</span></div>
-              <div class="bank-row"><span class="bank-key">SWIFT Code</span><span class="bank-val">GHCBGHAC</span></div>
-              <div class="bank-row"><span class="bank-key">Currency</span><span class="bank-val" style="font-family:inherit">USD (or GHS equivalent)</span></div>
-            </div>
-            <div class="bank-note">
-              ℹ️ <strong>After transferring:</strong> Please email <a href="mailto:info@kekeli4needy.com" style="color:#7a5a1a">info@kekeli4needy.com</a> with your full name, amount, date of transfer and bank reference number so we can acknowledge your donation promptly.<br><br>
-              📌 International transfers using SWIFT code <strong>GHCBGHAC</strong> may take 2–5 business days. Please include <strong>KEKELI DONATION</strong> in the transfer reference field.
             </div>
           </div>
         </div>
