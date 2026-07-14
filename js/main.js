@@ -343,6 +343,37 @@ function initCookieBanner(){
   }
 }
 
+/* ── HERO SLIDESHOW ────────────────────────────────────────────── */
+const heroCaptions = [
+  '75th Borehole — Gui, June 2026',
+  'Dzogadze Mechanised Borehole',
+  'Community Outreach &amp; Toy Distribution',
+  'School Assembly, Community Engagement',
+  '70th Borehole — Wovenu Senior High Technical School',
+  'Akatsi Anyiheme Basic School Borehole'
+];
+let heroIdx = 0;
+function rotateHero(){
+  const slides = document.querySelectorAll('.hero-slide');
+  if(!slides.length) return;
+  slides[heroIdx].classList.remove('active');
+  heroIdx = (heroIdx + 1) % slides.length;
+  slides[heroIdx].classList.add('active');
+  const capEl = document.getElementById('heroCaption');
+  if(capEl){
+    capEl.style.opacity = '0';
+    setTimeout(()=>{
+      capEl.innerHTML = heroCaptions[heroIdx] || '';
+      capEl.style.opacity = '1';
+    }, 400);
+  }
+}
+function initHeroSlideshow(){
+  if(document.querySelectorAll('.hero-slide').length){
+    setInterval(rotateHero, 5000);
+  }
+}
+
 /* ── INIT ──────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded',()=>{
   observeReveals();
@@ -351,4 +382,5 @@ document.addEventListener('DOMContentLoaded',()=>{
   initScrollspy();
   updateScrollProgress();
   initCookieBanner();
+  initHeroSlideshow();
 });
