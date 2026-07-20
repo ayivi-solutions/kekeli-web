@@ -322,14 +322,26 @@ function observeCounters(){
 }
 
 /* ── COOKIE CONSENT ────────────────────────────────────────────── */
+const COOKIE_CONSENT_DAYS = 180; // re-ask after this many days
+
 function cookieChoice(choice){
-  try{localStorage.setItem('kekeli_cookie_consent',choice)}catch(e){}
+  try{
+    localStorage.setItem('kekeli_cookie_consent', JSON.stringify({choice:choice, ts:Date.now()}));
+  }catch(e){}
   document.getElementById('cookieBanner').classList.remove('show');
 }
 function initCookieBanner(){
-  let stored=null;
-  try{stored=localStorage.getItem('kekeli_cookie_consent')}catch(e){}
-  if(!stored){
+  let expired = true;
+  try{
+    const raw = localStorage.getItem('kekeli_cookie_consent');
+    if(raw){
+      const data = JSON.parse(raw);
+      const ageMs = Date.now() - (data.ts || 0);
+      const maxMs = COOKIE_CONSENT_DAYS * 24 * 60 * 60 * 1000;
+      expired = ageMs > maxMs;
+    }
+  }catch(e){}
+  if(expired){
     setTimeout(()=>document.getElementById('cookieBanner').classList.add('show'),900);
   }
 }
