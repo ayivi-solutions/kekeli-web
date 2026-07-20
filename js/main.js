@@ -365,6 +365,26 @@ function initHeroSlideshow(){
   }
 }
 
+/* ── LIGHTBOX ──────────────────────────────────────────────────── */
+function openLightbox(src, alt){
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  const cap = document.getElementById('lightboxCaption');
+  img.src = src;
+  img.alt = alt || '';
+  cap.textContent = alt || '';
+  lb.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('show');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape') closeLightbox();
+});
+
 /* ── INIT ──────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded',()=>{
   observeReveals();
